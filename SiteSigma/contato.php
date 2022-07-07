@@ -9,21 +9,13 @@ include_once './includes/_header.php';
  *
  */
 
-if (isset($_POST['txtNome'])) {
-    $nome = strtoupper($_POST['txtNome']);
-    echo $nome;
-}
-if (isset($_POST['txtEmail'])) {
-    $nome = strtoupper($_POST['txtEmail']);
-    echo $nome;
-}
-if (isset($_POST['txtTelefone'])) {
-    $nome = strtoupper($_POST['txtTelefone']);
-    echo $nome;
-}
-if (isset($_POST['txtMensagem'])) {
-    $nome = strtoupper($_POST['txtMensagem']);
-    echo $nome;
+if (isset ( $_POST['txtNome']) ) {
+    $nome = strtoupper( $_POST['txtNome']);
+    $nome = $_POST['txtNome'];
+    $email = $_POST['txtEmail'];
+    $telefone = $_POST['txtTelefone'];
+    $mensagem = $_POST['txtMensagem'];
+    echo $nome. "<br>". $email."<br>". $telefone."<br>". $mensagem;
 }
 ?>
 
