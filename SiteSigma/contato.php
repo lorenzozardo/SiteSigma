@@ -38,5 +38,6 @@ if (isset ( $_POST['txtNome']) ) {
 
 <?php
 // include do footer
+include_once './includes/_banco.php';
 include_once './includes/_footer.php';
 ?>

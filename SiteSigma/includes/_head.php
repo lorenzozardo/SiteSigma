@@ -12,5 +12,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Sigma NFT</title>
 </head>
-
 <body>
+</html>
+<?php
+    include_once './includes/_banco.php';
+?>

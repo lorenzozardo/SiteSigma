@@ -1,17 +1,18 @@
 <?php
+include_once './includes/_banco.php';
 
 $produtos = array(
     0 => array('nome'=>'#5634', 'preco'=>'15.200.360.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'5634.jpg'),
-    1 => array('nome'=>'#5738', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'9607.jpg'),
-    2 => array('nome'=>'#4398', 'preco'=>'900.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'7638.jpg'),
-    3 => array('nome'=>'Girafa Legal', 'preco'=>'700.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'girafa_legal.jpg'),
-    4 => array('nome'=>'Macaco Legal', 'preco'=>'1400.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'macaco_legal.jpg'),
-    5 => array('nome'=>'Gato Legal', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'gato_legal.jpg'),
-    6 => array('nome'=>'Rato Legal', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'rato_legal.jpg'),
-    7 => array('nome'=>'Jacaré Legal', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'jacare_legal.jpg'),
-    8 => array('nome'=>'Passarinho Legal', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'passarinho_legal.jpg'),
-    9 => array('nome'=>'Leão Legal', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'leao_legal.jpg'),
-    10 => array('nome'=>'Tucano Legal', 'preco'=>'600.00','descricao'=>'Descrição Tucano Legal', 'imagem'=>'tucano_legal.jpg'),
+    1 => array('nome'=>'#9607', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'9607.jpg'),
+    2 => array('nome'=>'#7638', 'preco'=>'900.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'7638.jpg'),
+    3 => array('nome'=>'#648', 'preco'=>'700.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'648.jpg'),
+    4 => array('nome'=>'#793', 'preco'=>'1400.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'793.jpg'),
+    5 => array('nome'=>'#1109', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'1109.jpg'),
+    6 => array('nome'=>'#1115', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'1115.jpg'),
+    7 => array('nome'=>'#1216', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'1216.jpg'),
+    8 => array('nome'=>'#1302', 'preco'=>'600.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'1302.jpg'),
+    9 => array('nome'=>'#2121', 'preco'=>'1500.00','descricao'=>'By Bored Ape Yacht Club', 'imagem'=>'2121.jpg'),
+    10 => array('nome'=>'#2651', 'preco'=>'600.00','descricao'=>'Descrição Tucano Legal', 'imagem'=>'2651.jpg'),
     11 => array('nome'=>'Golfinho Legal', 'preco'=>'1200.00','descricao'=>'Descrição Golfinho Legal', 'imagem'=>'golfinho_legal.jpg'),
     12 => array('nome'=>'Onça Legal', 'preco'=>'1500.00','descricao'=>'Descrição Onça Legal', 'imagem'=>'onca_legal.jpg'),
     13 => array('nome'=>'Coruja Legal', 'preco'=>'900.00','descricao'=>'Descrição Coruja Legal', 'imagem'=>'coruja_legal.jpg'),
