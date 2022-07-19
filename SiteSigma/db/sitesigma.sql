@@ -71,9 +71,9 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`Produto`, `Nome`, `Descricao`, `Imagem`, `Preco`, `CategoriaID`, `Ativo`) VALUES
 (1, '#5634', 'By Bored Ape Yacht Club', '5634.jpg', 1520040000, 1, 1),
-(2, '#9607', 'By Bored Ape Yacht Club', '9607.jpg', 1246000000, 2, 1),
-(3, '#7638', 'By Bored Ape Yacht Club', '7638.jpg', 1320040000, 3, 1),
-(4, '#648', 'By Bored Ape Yacht Club', '648.jpg', 1023000000, 4, 1);
+(2, '#9607', 'By Bored Ape Yacht Club', '9607.jpg', 1246000000, 1, 1),
+(3, '#7638', 'By Bored Ape Yacht Club', '7638.jpg', 1320040000, 1, 1),
+(4, '#648', 'By Bored Ape Yacht Club', '648.jpg', 1023000000, 1, 1);
 
 --
 -- Índices para tabelas despejadas

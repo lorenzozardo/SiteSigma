@@ -1,5 +1,7 @@
 <?php
 // include do footer
+include_once './includes/_banco.php';
+include_once './includes/_footer.php';
 include_once './includes/_dados.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
@@ -25,8 +27,3 @@ $tipo = $_GET['tipo'];
         <a href=""><div class="col">Comprar</div></a>
     </div>
 </div>
-<?php
-// include do footer
-include_once './includes/_banco.php';
-include_once './includes/_footer.php';
-?>

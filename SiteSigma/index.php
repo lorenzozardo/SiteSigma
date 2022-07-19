@@ -3,6 +3,7 @@
 include_once './includes/_banco.php';
 include_once './includes/_head.php';
 include_once './includes/_header.php';
+include_once './includes/_footer.php';
 ?>
 <link rel="stylesheet" href="style.css">
 <div class="container">
@@ -20,7 +21,7 @@ include_once './includes/_header.php';
     while ($dados = mysqli_fetch_assoc($exec) ) {
         echo '<h1>'.$dados['Nome'].'</h1>';
     }
-
+    
         // laco de repeticao para exibir os 3 primeiros produtos
     for ($i=0; $i < 3 ; $i++) { 
     ?>
@@ -39,9 +40,3 @@ include_once './includes/_header.php';
 
     </div>
 </div>
-
-
-<?php
-// include do footer
-include_once './includes/_footer.php';
-?>
