@@ -1,15 +1,8 @@
 </main>
 
 
-<footer style="width: 100%; height: 150px; padding-left: 50px; background-color: black; margin-top: 80px;">
-    <div class="footer">
-    <div class="left-side-footer">
-        <img src="./img/next.jpeg" style="width: 250px; padding: 20px;">
-    </div>
-    <div class="right-side-footer">
-        <h2 style="padding-left: 23rem; padding-top: 50px; color: #fff;">Developed by: Lorenzo Zardo</h2>
-    </div>
-    </div>
+<footer>
+
 </footer>
 
 
@@ -29,5 +22,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 -->
 </body>
-
 </html>
+<?php
+include_once './includes/_banco.php';
+
+// fechar a conexao com o banco de dados
+mysqli_close($conn);
+?>

@@ -1,54 +1,23 @@
 <header>
-    <div class="menu">
-            <ul>
-                <li><a href="produtos.php" style="margin-left: 90px;">Produtos</a></li>
-                <li><a href="contato.php">Contato</a></li>
-                <input type="text" class="search-txt" placeholder="Pesquisar">
-                <li><a href="login.php"><img src="./img/perfil.jpeg" style="width: 32px;"></a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <a href="index.php"><img src="./img/next.jpeg" style="width: 137px;"></a>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sigma</a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./produtos.php">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contato.php">Contato</a>
+                </li>
 
-    <div class="navbar_header">
-        <div class="navbar_content">
-            <ul class="navbar_list">
-            <nav class="dp-menu">
-        <ul>
-            <li><a class="nav-link dropdown-toggle" href="#">MARCAS</a>
-                <ul class="marcas">
-                    <li><a href="#">Nike</a></li>
-                    <li><a href="#">Adidas</a></li>
-                    <li><a href="#">Puma</a></li>
-                    <li><a href="#">Lacoste</a></li>
-                </ul>
-            </li>
-            </ul>
-            </nav>
-                <li class="navbar_item">
-                    <a href="">OFERTAS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">CAMISETAS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">CALÇAS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">BERMUDAS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">CALÇADOS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">CASACOS</a>
-                </li>
-                <li class="navbar_item">
-                    <a href="">CAMISAS DE TIME</a>
-                </li>
             </ul>
         </div>
-    </div>
+    </nav>
 </header>
-<main>
+
+<?php
+include_once './includes/_banco.php';
+?>
