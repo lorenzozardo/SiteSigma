@@ -19,7 +19,7 @@ include_once './includes/_header.php';
     // percorre todos od dados extraidos do banco
     while ($dados = mysqli_fetch_assoc($exec) ) {
     ?>
-        <div class="card m-4" style="width: 18rem;">
+        <div class="card m-3" style="width: 15rem;">
     <img src="./content/<?php echo $dados['Imagem'];?>" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title"><?php echo $dados['Nome'];?></h5>

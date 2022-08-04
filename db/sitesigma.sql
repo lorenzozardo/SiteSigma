@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21-Jul-2022 às 17:22
+-- Tempo de geração: 04-Ago-2022 às 17:17
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -70,13 +70,15 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`ProdutoID`, `Nome`, `Descricao`, `Imagem`, `Preco`, `CategoriaID`, `Ativo`) VALUES
-(1, '#5634', 'By Bored Ape Yacht Club', '5634.jpg', 1520040000, 1, 1),
+(1, '#5634', 'By Bored Ape Yacht Club', '5634.jpg', 1520040000, 2, 1),
 (2, '#9607', 'By Bored Ape Yacht Club', '9607.jpg', 1246000000, 1, 1),
-(3, '#7638', 'By Bored Ape Yacht Club', '7638.jpg', 1320040000, 1, 1),
-(4, '#648', 'By Bored Ape Yacht Club', '648.jpg', 1023000000, 1, 1),
-(5, '#793', 'By Bored Ape Yacht Club', '793.jpg', 1170000000, 1, 1),
+(3, '#7638', 'By Bored Ape Yacht Club', '7638.jpg', 1320040000, 4, 1),
+(4, '#648', 'By Bored Ape Yacht Club', '648.jpg', 1023000000, 4, 1),
+(5, '#793', 'By Bored Ape Yacht Club', '793.jpg', 1170000000, 3, 1),
 (6, '#1109', 'By Bored Ape Yacht Club', '1109.jpg', 1090010000, 1, 1),
-(7, '#1115', 'By Bored Ape Yacht Club', '1115.jpg', 1030040000, 1, 1);
+(7, '#1115', 'By Bored Ape Yacht Club', '1115.jpg', 1030040000, 1, 1),
+(8, '#1216', 'By Bored Ape Yacht Club', '1216.jpg', 915000000, 3, 1),
+(9, '#1302', 'By Bored Ape Yacht Club', '1302.jpg', 878000000, 3, 1);
 
 --
 -- Índices para tabelas despejadas
@@ -108,7 +110,7 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `ProdutoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
