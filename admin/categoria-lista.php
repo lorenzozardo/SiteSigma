@@ -1,8 +1,11 @@
 <?php
+// valida se existe uma sessao
+include_once '_valida.php';
+
 // inclui a conexao com o banco de dados
-include_once '../includes/_banco.php';
-// inclui o head e header da pagina admin
-include_once '../includes/_head.php';
+include_once '../includes/_dados.php';
+// inclui o head da pagina admin
+include_once '../includes_head.php';
 //SQL de consulta
 $sql = "SELECT * FROM categorias";
 // executa a consulta de dados (variavel de conexao, variavel  sql de consulta)
@@ -51,5 +54,5 @@ include_once '../_menu.php';
     </main>
 <?php
 // inclui o footer
-include_once '../footer.php';
+include_once '_footer.php';
 ?>
