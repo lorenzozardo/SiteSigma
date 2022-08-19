@@ -58,3 +58,7 @@ switch($acao) {
         header('location: ./categoria-lista.php');
         break;
 }
+
+// inclui o footer
+include_once '../admin/_footer.php';
+?>

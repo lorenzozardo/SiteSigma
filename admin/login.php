@@ -1,6 +1,6 @@
 <?php 
 // include do arquivo do head
-include_once '_head.php'
+include_once '../admin/_head.php'
 ?>
 <main>
     <h2>Administração dos Produtos</h2>

@@ -2,7 +2,7 @@
 // inclui a conexao com o banco de dados
 include_once '../includes/_dados.php';
 // inclui o head e header da pagina admin
-include_once '_header.php';
+include_once '../admin/_head.php';
 // verifica se o get foi informado e se ele não esta vazio
 if( isset($_GET['id']) || !empty($_GET['id'])){ // captura o ID
     $id = $_GET['id'];
@@ -50,5 +50,5 @@ include_once '../admin/_menu.php';
 
 <?php
 // inclui o footer
-include_once '_footer.php';
+include_once '../admin/_footer.php';
 ?>

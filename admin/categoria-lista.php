@@ -5,7 +5,7 @@ include_once '_valida.php';
 // inclui a conexao com o banco de dados
 include_once '../includes/_dados.php';
 // inclui o head da pagina admin
-include_once '../includes_head.php';
+include_once '../admin/_head.php';
 //SQL de consulta
 $sql = "SELECT * FROM categorias";
 // executa a consulta de dados (variavel de conexao, variavel  sql de consulta)
@@ -13,7 +13,7 @@ $resultado = mysqli_query($conn,$sql);
 // conta quantos registros existem
 $total = mysqli_num_rows($resultado);
 // inclui o menu do painel admin
-include_once '../_menu.php';
+include_once '../admin/_menu.php';
 ?>
     <main>
         <h2>Administração das Categorias</h2>
@@ -54,5 +54,5 @@ include_once '../_menu.php';
     </main>
 <?php
 // inclui o footer
-include_once '_footer.php';
+include_once '../admin/_footer.php';
 ?>
