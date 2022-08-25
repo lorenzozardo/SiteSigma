@@ -1,6 +1,6 @@
 <?php
 // inclui a conexao com o banco de dados
-include_once '../includes/_dados.php';
+include_once '../includes/_banco.php';
 
 // captura a acao do usuario
 $acao = $_REQUEST['acao'];
@@ -12,7 +12,7 @@ switch($acao) {
     case 'excluir':
 
         // monta a SQL que exclui os registros
-        $sql = "DELETE FROM categoria WHERE CategoriaID = ".$id;
+        $sql = "DELETE FROM categorias WHERE CategoriaID = ".$id;
 
         // executa o comando de excluir
         mysqli_query($conn, $sql);
@@ -46,11 +46,12 @@ switch($acao) {
         // monta o sql conforme informa o id
         if( !isset($_POST['id']) || empty($_POST['id'])){
             // comando sql do banco de dados que inclui um registro 
-            $sql = "INSERT INTO `categoria`(`Nome`, `Descricao`, `Imagem`) VALUES ('".$nome."','".$descricao."','".$nomearquivo."')";
+            $sql = "INSERT INTO `categorias`(`Nome`, `Descricao`, `Imagem`) VALUES ('".$nome."','".$descricao."','".$nomearquivo."')";
         } else {
             // comando sql do banco de dados que atualiza um registro
-            $sql = "UPDATE `categoria` SET `Nome`='".$nome."', `Descricao`='".$descricao."',`Imagem`='".$imagem."' WHERE `CategoriaID`='".$id."' ";
+            $sql = "UPDATE `categorias` SET `Nome`='".$nome."', `Descricao`='".$descricao."',`Imagem`='".$imagem."' WHERE `CategoriaID`='".$id."' ";
         }
+
         // executa o comando de excluir
         mysqli_query($conn, $sql);
 

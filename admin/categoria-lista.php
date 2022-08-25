@@ -1,9 +1,9 @@
 <?php
 // valida se existe uma sessao
-include_once '_valida.php';
+//include_once '_valida.php';
 
 // inclui a conexao com o banco de dados
-include_once '../includes/_dados.php';
+include_once '../includes/_banco.php';
 // inclui o head da pagina admin
 include_once '../admin/_head.php';
 //SQL de consulta
@@ -34,7 +34,7 @@ include_once '../admin/_menu.php';
             <tr>
                 <td><?php echo $dado['CategoriaID'];?></td>
                 <td><a href="categoria-salvar.php?acao=salvar&id=<?php echo $dado['CategoriaID'];?>"><?php echo $dado['Nome'];?></a></td>
-                <td><a href="categoria-processa.php?acao=excluir$id=<?php echo $dado['CategoriaID'];?>">Excluir</a></td>
+                <td><a href="categoria-processa.php?acao=excluir&id=<?php echo $dado['CategoriaID'];?>">Excluir</a></td>
             </tr>
             <?php
                 }

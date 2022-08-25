@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Ago-2022 às 17:17
+-- Tempo de geração: 25-Ago-2022 às 17:18
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.3.27
 
@@ -30,6 +30,8 @@ SET time_zone = "+00:00";
 CREATE TABLE `categorias` (
   `CategoriaID` int(11) NOT NULL,
   `Nome` varchar(100) NOT NULL,
+  `Descricao` longtext NOT NULL,
+  `Imagem` varchar(255) NOT NULL,
   `Ativo` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -37,17 +39,17 @@ CREATE TABLE `categorias` (
 -- Extraindo dados da tabela `categorias`
 --
 
-INSERT INTO `categorias` (`CategoriaID`, `Nome`, `Ativo`) VALUES
-(1, 'Carros', 1),
-(2, 'Flores', 1),
-(3, 'Gatos', 1),
-(4, 'Dogs', 1),
-(6, 'Jacaré', 1),
-(7, 'Capivara', 1),
-(8, 'Rato', 1),
-(9, 'Leão', 1),
-(10, 'Macaco', 1),
-(11, 'Computador', 1);
+INSERT INTO `categorias` (`CategoriaID`, `Nome`, `Descricao`, `Imagem`, `Ativo`) VALUES
+(1, 'Carros', '', '', 1),
+(2, 'Flores', '', '', 1),
+(3, 'Gatos', '', '', 1),
+(4, 'Dogs', '', '', 1),
+(6, 'Jacaré', '', '', 1),
+(7, 'Capivara', '', '', 1),
+(8, 'Rato', '', '', 1),
+(9, 'Leão', '', '', 1),
+(10, 'Macaco', '', '', 1),
+(13, '', '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -104,7 +106,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT de tabela `categorias`
 --
 ALTER TABLE `categorias`
-  MODIFY `CategoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `CategoriaID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`

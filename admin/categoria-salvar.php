@@ -1,13 +1,14 @@
 <?php
 // inclui a conexao com o banco de dados
-include_once '../includes/_dados.php';
+include_once '../includes/_banco.php';
 // inclui o head e header da pagina admin
 include_once '../admin/_head.php';
 // verifica se o get foi informado e se ele não esta vazio
 if( isset($_GET['id']) || !empty($_GET['id'])){ // captura o ID
     $id = $_GET['id'];
     // consulta os dados
-    $sql = "SELECT * FROM categoria WHERE CategoriaID = ".$id;
+    $sql = "SELECT * FROM categorias WHERE CategoriaID = ".$id;
+
     $resultado = mysqli_query($conn, $sql);
     // parametro que converte as colunas em campos
     $dados = mysqli_fetch_array($resultado, MYSQLI_ASSOC);
@@ -27,8 +28,8 @@ include_once '../admin/_menu.php';
     <hr>
     <form action="categoria-processa.php" method="post" enctype="multipart/form-data">
         <input type="hidden" value="salvar" name="acao">
-        <input type="text" value="<?php echo $dados['Imagem'];?>" name="imagem">
-        <input type="text" name="id" value="<?php echo $id;?>"><br>
+        <input type="hidden" value="<?php echo $dados['Imagem'];?>" name="imagem">
+        <input type="hedden" name="id" value="<?php echo $id;?>"><br>
         <label for="nome">Nome:</label><br>
         <input type="text" id="nome" name="nome" value="<?php echo $dados['Nome'];?>"><br>
         <label for="descricao">Descrição:</label><br>
